@@ -7,5 +7,5 @@ export DBUS_SESSION_BUS_ADDRESS
 export DBUS_SESSION_BUS_PID
 pulseaudio --log-level=1 &
 /usr/lib/bluetooth/bluetoothd --plugin=a2dp -n &
-avahi-daemon -D
+#avahi-daemon -D
 . /bin/simple-bluetooth-agent.sh
