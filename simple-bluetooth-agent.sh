@@ -3,7 +3,6 @@
 hciconfig hci0 reset
 hciconfig hci0 up
 hciconfig hci0 name $NAME
-hciconfig hci0 sspmode 0
 hciconfig hci0 piscan
 
 expect -c '
