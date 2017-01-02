@@ -10,6 +10,7 @@ expect -c '
     spawn bluetoothctl
     send "power on\r"
     send "pairable on\r"
+    send "discoverable on\r"
     send "agent on\r"
     expect "Agent registered"
     send "default-agent\r"
