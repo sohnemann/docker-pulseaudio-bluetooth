@@ -16,8 +16,8 @@ docker run \
     --net=host \
     --cap-add NET_ADMIN \
     -v /opt/bluetooth:/var/lib/bluetooth \
-    -e NAME="Some-bluetooth" \
-    -e DEVICE="40:EF:4C:C3:9C:CE" \
+    -e NAME="ENEBY30" \
+    -e DEVICE="FC:58:FA:55:F2:5B" \
     cdauth/a2dp-server
 ```
 
@@ -36,8 +36,8 @@ pulseaudio-bluetooth:
     - /etc/localtime:/etc/locialtime:ro
     - ./bluetooth:/var/lib/bluetooth
   environment:
-    - NAME=Some-bluetooth
-    - DEVICE=40:EF:4C:C3:9C:CE
+    - NAME=ENEBY30
+    - DEVICE=FC:58:FA:55:F2:5B
 ```
 
 **Notes:**
