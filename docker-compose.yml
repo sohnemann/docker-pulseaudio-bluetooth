@@ -1,6 +1,6 @@
 pulseaudio-bluetooth:
   restart: always
-  image: cdauth/a2dp-server
+  image: dockerblue
   devices:
     - /dev/bus/usb
     - /dev/snd
