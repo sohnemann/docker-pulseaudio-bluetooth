@@ -1,0 +1,15 @@
+pulseaudio-bluetooth:
+  restart: always
+  image: cdauth/a2dp-server
+  devices:
+    - /dev/bus/usb
+    - /dev/snd
+  net: host
+  cap_add:
+    - NET_ADMIN
+  volumes:
+    - /etc/localtime:/etc/locialtime:ro
+    - ./bluetooth:/var/lib/bluetooth
+  environment:
+    - NAME=ENEBY30
+    - DEVICE=FC:58:FA:55:F2:5B
